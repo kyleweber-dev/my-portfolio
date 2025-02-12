@@ -50,18 +50,18 @@ h6::selection {
 
 .gradient-accent {
   position: absolute;
-  top: -450px; /* Moves it further up */
-  left: -450px; /* Moves it further left */
-  width: 800px; /* Increase size to extend beyond visible area */
-  height: 800px;
+  top: -450px;
+  left: -450px;
+  width: 900px;
+  height: 900px;
   background: radial-gradient(
     circle,
     rgba(90, 150, 255, 0.3) 10%,
-    /* More transparent at center */ rgba(23, 37, 84, 0.2) 50%,
-    /* Smoother transition */ rgba(23, 37, 84, 0) 90% /* Completely fades out */
+    rgba(23, 37, 84, 0.2) 50%,
+    rgba(23, 37, 84, 0) 90%
   );
-  pointer-events: none; /* Prevents interaction */
-  z-index: -1; /* Keeps it behind content */
+  pointer-events: none;
+  z-index: -1;
 }
 
 header,
