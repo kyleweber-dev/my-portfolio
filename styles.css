@@ -136,9 +136,9 @@ section h2 {
   position: absolute;
   inset: 0;
   background: rgba(16, 26, 49, 0.6); /* Slightly transparent */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1rem);
   will-change: backdrop-filter, opacity; /* Optimizes smooth transition */
-  -webkit-backdrop-filter: blur(10px); /* iOS fix */
+  -webkit-backdrop-filter: blur(1rem); /* iOS fix */
 }
 
 .about-content {
