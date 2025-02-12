@@ -115,45 +115,24 @@ section h2 {
   font-size: 1rem;
   font-weight: 500;
 }
-/* Sticky Header */
+
 .sticky-header {
   position: sticky;
   top: 0;
-  padding: 1.5rem 0;
-  width: 100%;
-  z-index: 50; /* Ensure it's above other content */
-  will-change: transform, opacity; /* Optimizes for smoother rendering */
-  transform: translateZ(0); /* Forces GPU acceleration to prevent flicker */
+  padding: 1rem 0;
 }
 
-/* Ensures text stays above the blur */
 .sticky-header h2 {
   position: relative;
   z-index: 2;
-  color: var(--color-highlight);
 }
 
-/* Background Blur Effect - Now Optimized */
 .sticky-header::before {
   content: "";
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(10px);
-  z-index: -1;
-  opacity: 0; /* Starts fully transparent */
-  transition: opacity 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out;
-  background: linear-gradient(
-    to bottom,
-    rgba(15, 23, 42, 0.8),
-    /* Darker at the top */ rgba(15, 23, 42, 0.5) /* Gradual fade */
-  );
-  will-change: opacity, backdrop-filter;
-}
-
-/* Ensures blur effect persists smoothly */
-.sticky-header.scrolled::before {
-  opacity: 1;
-  backdrop-filter: blur(12px);
+  background: #101a3199;
+  backdrop-filter: blur(5px);
 }
 
 .about-content {
