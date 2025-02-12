@@ -48,22 +48,6 @@ h6::selection {
   inset: 0;
 }
 
-.gradient-accent {
-  position: absolute;
-  top: -450px;
-  left: -450px;
-  width: 750px;
-  height: 750px;
-  background: radial-gradient(
-    circle,
-    rgba(90, 150, 255, 0.3) 10%,
-    rgba(23, 37, 84, 0.2) 50%,
-    rgba(23, 37, 84, 0) 90%
-  );
-  pointer-events: none;
-  z-index: -1;
-}
-
 header,
 main,
 footer {
