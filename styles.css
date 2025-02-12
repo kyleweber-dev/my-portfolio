@@ -52,8 +52,8 @@ h6::selection {
   position: absolute;
   top: -450px;
   left: -450px;
-  width: 900px;
-  height: 900px;
+  width: 750px;
+  height: 750px;
   background: radial-gradient(
     circle,
     rgba(90, 150, 255, 0.3) 10%,
