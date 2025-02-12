@@ -12,7 +12,10 @@ document.addEventListener("mousemove", (event) => {
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".sticky-header");
 
-  window.addEventListener("scroll", () => {
+  let lastScrollY = 0;
+  let ticking = false;
+
+  function updateHeader() {
     headers.forEach((header) => {
       const rect = header.getBoundingClientRect();
 
@@ -22,5 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         header.classList.remove("scrolled");
       }
     });
+    ticking = false;
+  }
+
+  window.addEventListener("scroll", () => {
+    lastScrollY = window.scrollY;
+
+    if (!ticking) {
+      requestAnimationFrame(updateHeader);
+      ticking = true;
+    }
   });
 });
