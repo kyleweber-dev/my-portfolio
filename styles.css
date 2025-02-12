@@ -2,6 +2,11 @@
   --color-accent: #5eead4;
   --color-highlight: #d7dce5;
   --color-background: #0f172a;
+  --background-accent: #122b39;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -201,7 +206,7 @@ section h2 {
 .tag {
   padding: 0.35rem 1rem;
   border-radius: 1.5rem;
-  background-color: #122b39;
+  background-color: var(--background-accent);
 }
 
 .project-images-container {
@@ -258,4 +263,33 @@ section h2 {
 
 .project-archive-link:hover::after {
   background: var(--color-accent);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.scroll-to-top {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(--color-accent);
+  background: var(--background-accent);
+  padding: 0 0.75rem;
+  aspect-ratio: 1 /1;
+  border-radius: 100%;
+  overflow: hidden;
+  transition-duration: 200ms;
+}
+
+.scroll-to-top:hover {
+  opacity: 0.7;
 }
