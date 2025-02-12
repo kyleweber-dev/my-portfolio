@@ -50,8 +50,8 @@ h6::selection {
 
 .gradient-accent {
   position: absolute;
-  top: -300px; /* Moves it further up */
-  left: -300px; /* Moves it further left */
+  top: -450px; /* Moves it further up */
+  left: -450px; /* Moves it further left */
   width: 800px; /* Increase size to extend beyond visible area */
   height: 800px;
   background: radial-gradient(
