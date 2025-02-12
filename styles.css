@@ -115,7 +115,7 @@ section h2 {
   font-size: 1rem;
   font-weight: 500;
 }
-
+/* Sticky Header */
 .sticky-header {
   position: sticky;
   top: 0;
@@ -124,24 +124,33 @@ section h2 {
   z-index: 10;
 }
 
+/* Ensures text stays above the blur */
 .sticky-header h2 {
   position: relative;
   z-index: 2;
   color: var(--color-highlight);
 }
 
+/* Background Blur Effect - Now with a Gradient Fade */
 .sticky-header::before {
   content: "";
   position: absolute;
   inset: 0;
   backdrop-filter: blur(10px);
   z-index: -1;
-  opacity: 0;
+  opacity: 0; /* Start fully transparent */
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.8),
+    /* Slightly darker at the top */ rgba(15, 23, 42, 0.6)
+      /* Gradually fades down */
+  );
 }
 
+/* Make the blur persist smoothly once scrolling */
 .sticky-header.scrolled::before {
   opacity: 1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px); /* Slightly stronger blur */
 }
 
 .about-content {

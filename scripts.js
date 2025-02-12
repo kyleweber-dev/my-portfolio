@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     headers.forEach((header) => {
       const rect = header.getBoundingClientRect();
 
-      // If the header has moved past the top of the viewport (covering content)
       if (rect.top <= 0) {
         header.classList.add("scrolled");
       } else {
