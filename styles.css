@@ -48,23 +48,6 @@ h6::selection {
   inset: 0;
 }
 
-.cursor {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(23, 37, 84, 0.3) 60%,
-    rgba(19, 31, 69, 0) 100%
-  );
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: background 0.3s ease, transform 0.05s ease-out;
-  filter: blur(50px);
-}
-
 header,
 main,
 footer {
