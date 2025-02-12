@@ -120,10 +120,12 @@ section h2 {
   position: sticky;
   top: 0;
   padding: 1rem 0;
+  width: 100%;
   z-index: 100; /* Ensure it's above content */
-  background: transparent; /* No solid background */
-  will-change: transform, backdrop-filter; /* Optimizes rendering */
-  transform: translateZ(0); /* Forces GPU acceleration */
+  backdrop-filter: blur(15px); /* Directly applies blur to everything behind */
+  -webkit-backdrop-filter: blur(15px); /* Ensures iOS support */
+  background: rgba(16, 26, 49, 0.6); /* Slight transparency to show blur */
+  will-change: backdrop-filter, opacity;
 }
 
 .sticky-header h2 {
