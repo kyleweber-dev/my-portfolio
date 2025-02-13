@@ -194,6 +194,12 @@ section h2 {
   gap: 0.65rem;
 }
 
+.anchor-icon {
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  rotate: -9deg;
+}
+
 .tenure {
   opacity: 0.7;
   text-transform: uppercase;
